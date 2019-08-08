@@ -39,8 +39,16 @@
       <div class="conter2 clearfix">
         <div class="conter2-1">
           <h2>店内头条</h2>
-          <div>
+          <div class="div-img1">
             <img src="./../assets/images/素材20.jpg" alt />
+            <h6>客厅善法的摆放特色与方法</h6>
+          </div>
+          <div class="div-img2">
+            <img src="./../assets/images/素材26.jpg" alt />
+            <h6>客厅善法的摆放特色与方法</h6>
+          </div>
+          <div class="div-img3">
+            <img src="./../assets/images/素材21.jpg" alt />
             <h6>客厅善法的摆放特色与方法</h6>
           </div>
         </div>
@@ -183,6 +191,7 @@ export default {
         margin-top: 10px;
         background: #ffffff;
         border-radius: 5%;
+        text-align: center;
         h2 {
           text-align: left;
           font-size: 18px;
@@ -190,15 +199,49 @@ export default {
           font-weight: 700;
         }
         div{
-          width: 100%;
-          height: 100%;
+          display: inline-block;
+          width: 94%;
+          height: 125px;
+          overflow: hidden;
+          border-radius: 5%;
+          margin-bottom: 10px;
           img{
-            width: 94%;
+            width: 100%;
+            // height: 150px;
             border-radius: 5%;
+            transform: translate(0, -10px); 
           }
           h6{
             position: relative;
-            top: -40px;
+            top: -80px;
+            left: 0;
+            color: #ffffff;
+          }
+        }
+        .div-img2{
+          img{
+            width: 100%;
+            // height: 150px;
+            border-radius: 5%;
+            transform: translate(0, -104px); 
+          }
+          h6{
+            position: relative;
+            top: -142px;
+            left: 0;
+            color: #ffffff;
+          }
+        }
+        .div-img3{
+          img{
+            width: 100%;
+            // height: 150px;
+            border-radius: 5%;
+            transform: translate(0, -70px); 
+          }
+          h6{
+            position: relative;
+            top: -108px;
             left: 0;
             color: #ffffff;
           }

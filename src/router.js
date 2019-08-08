@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Exhibition from './components/Exhibition.vue'
 
 Vue.use(Router)
 
@@ -15,10 +16,16 @@ export default new Router({
     },{
       path: '/Classification',
       name: 'Classification',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Classification.vue')
+      component: () => import('./views/Classification.vue'),
+      //分类子路由   商品展示模块
+      children: [
+        {
+          path: '/Exhibition',
+          name: 'Exhibition',
+          component: Exhibition
+          // component: () => import('./components/Exhibition.vue')
+        }
+      ]
     },{
       path: '/ShoppingCart',
       name: 'ShoppingCart',
