@@ -19,55 +19,19 @@
 <script>
 export default {
   name: "Exhibition",
+  props: {
+    ExhibitionArr: Array,
+    required: true
+  },
   data() {
+    // console.log(this.$route.params.navName);
     return {
-      ExhibitionArr: [
-        {
-          id: 1,
-          describe: "棉麻布艺风情北欧简约风棉麻布艺",
-          rmb: 256,
-          number: 21321,
-          src: require("./../assets/images/素材12.jpg")
-        },
-        {
-          id: 2,
-          describe: "棉麻布艺风情北欧简约风棉麻布艺",
-          rmb: 256,
-          number: 21321,
-          src: require("./../assets/images/素材12.jpg")
-        },
-        {
-          id: 3,
-          describe: "棉麻布艺风情北欧简约风棉麻布艺",
-          rmb: 256,
-          number: 21321,
-          src: require("./../assets/images/素材12.jpg")
-        },
-        {
-          id: 4,
-          describe: "棉麻布艺风情北欧简约风棉麻布艺",
-          rmb: 256,
-          number: 21321,
-          src: require("./../assets/images/素材12.jpg")
-        },
-        {
-          id: 5,
-          describe: "棉麻布艺风情北欧简约风棉麻布艺",
-          rmb: 256,
-          number: 21321,
-          src: require("./../assets/images/素材12.jpg")
-        },
-        {
-          id: 6,
-          describe: "棉麻布艺风情北欧简约风棉麻布艺",
-          rmb: 256,
-          number: 21321,
-          src: require("./../assets/images/素材12.jpg")
-        }
-      ]
+      
     };
   },
-  
+  methods: {
+    
+  }
 };
 </script>
 
@@ -92,6 +56,7 @@ export default {
     h4 {
       text-align: left;
       color: #ff0000;
+      font-size: 14px;
     }
     h6 {
       text-align: left;

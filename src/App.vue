@@ -10,7 +10,10 @@
           <router-link to="/">首页</router-link>
         </li>
         <li>
-          <router-link to="/Classification">分类</router-link>
+          <router-link :to="{
+            name: 'Classification',
+            params: {navName: '限时购买'}
+          }">分类</router-link>
         </li>
         <li>
           <router-link to="/ShoppingCart">购物车</router-link>

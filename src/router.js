@@ -20,7 +20,7 @@ export default new Router({
       //分类子路由   商品展示模块
       children: [
         {
-          path: '/Exhibition',
+          path: '/Exhibition/:navName',
           name: 'Exhibition',
           component: Exhibition
           // component: () => import('./components/Exhibition.vue')
